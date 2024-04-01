@@ -8,10 +8,12 @@ import CardProps from './Task/CardProps';
 import Data from './Task/Data';
 import Title from './Task/Title';
 import Footer from './Task/Footer';
+import Emoji from './Emoji';
 function App() {
   return (
     <>
      {/* <Name/> */}
+     <Emoji/>
          <Title/>
     <div className="App  flex mt-10">
          {Data.map((cvalue,index,array)=>{
