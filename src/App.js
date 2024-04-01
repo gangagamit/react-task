@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
-
+// import Name from './Task/Greeting';
+import CardProps from './Task/CardProps';
+// import Img1 from './Image/Img-1.jpg';
+// import Img2 from './Image/Img-2.jpg';
+// import Img3 from './Image/Img-3.jpg';
+import Data from './Task/Data';
+import Title from './Task/Title';
+import Footer from './Task/Footer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+     {/* <Name/> */}
+         <Title/>
+    <div className="App  flex mt-10">
+         {Data.map((cvalue,index,array)=>{
+        console.log(cvalue,"cvalue")
+        return <CardProps key={index} Name={cvalue.Name} descri={cvalue.descri} btn={cvalue.btn} img={cvalue.img}/>
+      })}
     </div>
+      <div className='App flex mt-5'>
+      {Data.map((cvalue,index,array)=>{
+          console.log(cvalue,"cvalue")
+          return <CardProps key={index} Name={cvalue.Name} descri={cvalue.descri} btn={cvalue.btn} img={cvalue.img}/>
+        })}
+      </div>
+      <Footer/>
+      </>
   );
 }
 
