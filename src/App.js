@@ -1,19 +1,28 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 // import Name from './Task/Greeting';
-import CardProps from './Task/CardProps';
-// import Img1 from './Image/Img-1.jpg';
+// import CardProps from './Task/CardProps';
+// import Img1 from './Image/Img-1.jpg';  
 // import Img2 from './Image/Img-2.jpg';
 // import Img3 from './Image/Img-3.jpg';
-import Data from './Task/Data';
-import Title from './Task/Title';
-import Footer from './Task/Footer';
-import Emoji from './Emoji';
+// import Data from './Task/Data';
+// import Title from './Task/Title';
+// import Footer from './Task/Footer';
+// import EEmoji from './Task/EEmoji';
+import Button from './Task/Button';
+import './Button.css'
 function App() {
+ 
+  
   return (
     <>
+    <div className='App flex justify-around'>
+    
+
+      <Button/>
+   
      {/* <Name/> */}
-     <Emoji/>
+     {/* <EEmoji/>
          <Title/>
     <div className="App  flex mt-10">
          {Data.map((cvalue,index,array)=>{
@@ -27,7 +36,8 @@ function App() {
           return <CardProps key={index} Name={cvalue.Name} descri={cvalue.descri} btn={cvalue.btn} img={cvalue.img}/>
         })}
       </div>
-      <Footer/>
+      <Footer/> */}
+      </div>
       </>
   );
 }
