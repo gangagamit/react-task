@@ -9,8 +9,10 @@ import './App.css';
 // import Title from './Task/Title';
 // import Footer from './Task/Footer';
 // import EEmoji from './Task/EEmoji';
-import Button from './Task/Button';
+// import Button from './Task/Button';
+import Table from './Task/Table';
 import './Button.css'
+
 function App() {
  
   
@@ -18,9 +20,9 @@ function App() {
     <>
     <div className='App flex justify-around'>
     
-
-      <Button/>
-   
+      <Table/>
+      {/* <Button/> */}
+     
      {/* <Name/> */}
      {/* <EEmoji/>
          <Title/>
